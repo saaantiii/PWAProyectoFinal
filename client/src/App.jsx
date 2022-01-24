@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Sidebar from './common/sidebar'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+/* import '../node_modules/bootstrap/dist/css/bootstrap.min.css' */
 import {Outlet} from 'react-router-dom'
 import './common/style.css';
 

@@ -12,7 +12,7 @@ const cors = require('cors');
 
 
 //2-Capturar datos formulario
-
+app.use(express.static(path.resolve(__dirname, '../client/build')));
 app.use(cors({
   origin: true,
   methods: ["GET", "POST", "DELETE"],
@@ -53,7 +53,7 @@ connection.connect((error) => {
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../client/public')));
+
 
 
 app.use(session({
