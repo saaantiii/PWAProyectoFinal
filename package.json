@@ -1,7 +1,8 @@
 {
   "name": "pwafinal",
   "version": "1.0.0",
-  "description": "",
+
+  "description": "Frontend with ReactJS and the backend with NodeJS (Express)",
   "main": "index.js",
   "engines": {
     "node": "16.13.2"
@@ -12,7 +13,7 @@
     "build": "cd client && npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Santiago Sarchetti",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
