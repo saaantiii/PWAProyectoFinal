@@ -8,14 +8,14 @@ function Index() {
     const [panels, setPanels] = useState([]);
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/getpanels").then((response) => {
+        Axios.get("/getpanels").then((response) => {
             setPanels(response.data);
             console.log(response.data);
         });
     }, []);
 
     const deletePanel = (idlink) => {
-        Axios.delete(`http://localhost:3001/delete/${idlink}`).then((response) => {
+        Axios.delete(`/delete/${idlink}`).then((response) => {
             console.log(response);
             sweet({
                 alert: response.data.alert,

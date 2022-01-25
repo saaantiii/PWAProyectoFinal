@@ -14,7 +14,7 @@ export const Addlink = () => {
 
 
     const addPanel = () => {
-        (Axios.post('http://localhost:3001/panel', {
+        (Axios.post('/panel', {
             sitename: sitename,
             url: url,
             description: description

@@ -15,7 +15,7 @@ const Register = () => {
     const [password, setPassword] = useState("");
     
     let addUser = () => {
-        Axios.post('http://localhost:3001/register', {
+        Axios.post('/register', {
             name: name,
             surname: surname,
             email: email,

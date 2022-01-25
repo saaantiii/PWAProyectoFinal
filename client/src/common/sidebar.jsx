@@ -17,7 +17,7 @@ export const Sidebar = () => {
     };
     useEffect(() => {
         const getData = async () => {
-            Axios.get('http://localhost:3001/loggedin')
+            Axios.get('/loggedin')
                 .then(response => {
                     console.log(response.data.loggedIn);
                     if (response.data.loggedIn === undefined) {
@@ -39,14 +39,14 @@ export const Sidebar = () => {
     const [username, setName] = useState("");
     const [surname, setSurname] = useState("");
     useEffect(() => {
-        Axios.get("http://localhost:3001/loggedinusername").then((response) => {
+        Axios.get("/loggedinusername").then((response) => {
             setName(response.data.user);
             setSurname(response.data.surname);
             console.log(response.data)
         });
     }, []);
     const logout = () => {
-        Axios.get("http://localhost:3001/logout").then((response) => {
+        Axios.get("/logout").then((response) => {
             console.log(response);
             sweet({
                 alert: true,

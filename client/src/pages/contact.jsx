@@ -9,7 +9,7 @@ export const Contact = () => {
     const [telefone, setTelefone] = useState ("");
     const [text, setText] = useState("");
     const send = () => {
-        Axios.post('http://localhost:3001/send', {
+        Axios.post('/send', {
             name: name,
             surname: surname,
             email: email,

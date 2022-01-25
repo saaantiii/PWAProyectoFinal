@@ -14,7 +14,7 @@ export const Login = () => {
     const [password, setPassword] = useState ("");
 
     let loginUser = () => {
-        Axios.post('http://localhost:3001/auth', {
+        Axios.post('/auth', {
             username: username,
             password: password
         })
