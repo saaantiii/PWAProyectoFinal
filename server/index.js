@@ -286,9 +286,9 @@ app.get('/logout', (req, res) => {
   })
 });
 
-/* app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/public', 'index.html'));
-}); */
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+});
 
 // error handler
 /* app.use(function (err, req, res, next) {
