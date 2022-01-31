@@ -1,9 +1,9 @@
 const config = {
     mysql: {
-        host: 'sql5.freesqldatabase.com',
-        user: 'sql5467834',
-        password: 'UrNejPYUh5',
-        database: 'sql5467834',
+        host: 'us-cdbr-east-05.cleardb.net',
+        user: 'b34128cbeb1f38',
+        password: '223bc614',
+        database: 'heroku_a7d342319c652bb',
     }
 };
 
